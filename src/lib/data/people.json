@@ -1,0 +1,53 @@
+
+
+
+"people":[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 30,
+      "email": "john.doe@example.com",
+      "occupation": "Software Engineer",
+      "location": "New York, USA"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "age": 25,
+      "email": "jane.smith@example.com",
+      "occupation": "Graphic Designer",
+      "location": "London, UK"
+    },
+    {
+      "id": 3,
+      "name": "Carlos Garcia",
+      "age": 35,
+      "email": "carlos.garcia@example.com",
+      "occupation": "Data Scientist",
+      "location": "Madrid, Spain"
+    },
+    {
+      "id": 4,
+      "name": "Aisha Khan",
+      "age": 28,
+      "email": "aisha.khan@example.com",
+      "occupation": "Marketing Specialist",
+      "location": "Dubai, UAE"
+    },
+    {
+      "id": 5,
+      "name": "Liam Brown",
+      "age": 40,
+      "email": "liam.brown@example.com",
+      "occupation": "Project Manager",
+      "location": "Sydney, Australia"
+    }
+  ]
+
+
+
+
+
+
+
+
