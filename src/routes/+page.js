@@ -10,10 +10,13 @@
 
 */
 
-import people from '$lib/data/people.json';
+//import people from '$lib/data/people.json';
+//const people = require('$lib/data/people.json');
 
-const peopleString = JSON.stringify(people);
-console.log(peopleString);
+
+
+//const peopleString = JSON.stringify(people);
+//console.log(peopleString);
 
 
 
@@ -26,8 +29,7 @@ export const load = async () => {
         product: 'iPhone 14',
         price: 999,
         description: 'Latest iPhone model with A16 chip and improved camera',
-        image: 'https://example.com/iphone14.jpg',
-        people: people
+        image: 'https://example.com/iphone14.jpg'
 
 
 

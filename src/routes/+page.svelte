@@ -7,7 +7,10 @@
 
     import RonsWeb from '$lib/assets/RonsWeb.gif';
     import RonsWeb2 from '$lib/assets/skate02.gif';
-    
+    //import people from '$lib/data/people.json';
+   
+
+    //console.log('people', people);
 
 
     let isMenuOpen = false;
@@ -33,11 +36,15 @@ let selectedScripture = ''; // Variable to hold the selected value
 //    ר ו נ  א ל ד 
 //    description:  updated javascript personal website
 
+import scriptureData from '$lib/data/scripture.json';
+//var scriptures = JSON.parse(scripturejson);
+console.log('scriptures', scriptureData);
 
-var RevMessage = "I am coming soon, hold fast what you have, so that no one may seize your crown.";
-var ZachMessage = "Not by might nor by power, but by my Spirit says the Lord of hosts.";
-var JerMessage = "Will a man leave the snow waters of Lebanon?  Do the mountian waters run dry the cold flowing streams.";
-var ProvMessage = "Let not mercy and kindness and truth leave you.";
+//let jsonObject = JSON.parse(scriptureData);
+var RevMessage = scriptureData.scripture[0].RevMessage;
+var ZachMessage = scriptureData.scripture[1].ZachMessage;
+var JerMessage = scriptureData.scripture[2].JerMessage;
+var ProvMessage = scriptureData.scripture[3].ProvMessage;
 
 
 
