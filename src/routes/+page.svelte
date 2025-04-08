@@ -33,6 +33,7 @@ let selectedScripture = ''; // Variable to hold the selected value
 
 //    name: Ronald Kiefer
 //    date: July 22, 2021
+//    update: April 7, 2025
 //    ר ו נ  א ל ד 
 //    description:  updated javascript personal website
 
