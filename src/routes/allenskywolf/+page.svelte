@@ -257,7 +257,7 @@ style="background-image: url({AllenSkyWolf});">
 
 form {
     font-size: 20px;
-    padding-left: 20px;
+    padding-left: 20px; 
 }
 
 .message01 {
