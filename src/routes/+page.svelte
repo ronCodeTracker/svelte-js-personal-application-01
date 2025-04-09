@@ -88,7 +88,7 @@ let isOn = false;
     </div>
     <ul class:open={isMenuOpen}>
         <li><a href="/about">about</a></li>
-        <li><a href="/aboutPageTwo">about page two</a></li>
+        <li><a href="/allenskywolf">AllenSkyWolf</a></li>
         <li><a href="/props">props</a></li>
         <li><a href="/logic">logic</a></li>
     </ul>
