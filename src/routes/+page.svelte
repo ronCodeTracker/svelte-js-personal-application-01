@@ -7,6 +7,8 @@
 
     import RonsWeb from '$lib/assets/RonsWeb.gif';
     import RonsWeb2 from '$lib/assets/skate02.gif';
+    
+    
     //import people from '$lib/data/people.json';
    
 
