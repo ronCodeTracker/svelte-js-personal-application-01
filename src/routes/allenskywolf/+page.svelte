@@ -61,10 +61,10 @@ style="background-image: url({AllenSkyWolf});">
     </div>
     <ul class:open={isMenuOpen}>
         <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="/">outofsevice</a></li>
         <li><a href="/allenskywolf">AllenSkyWolf</a></li>
-        <li><a href="/props">props</a></li>
-        <li><a href="/logic">logic</a></li>
+        <li><a href="/">outofservice</a></li>
+        <li><a href="/">outofservice</a></li>
     </ul>
 </nav>
 
