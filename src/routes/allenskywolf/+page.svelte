@@ -2,7 +2,7 @@
 <script>
 
     import AllenSkyWolf from '$lib/assets/AllenSkyWolfHeader001.png';
-
+    import RonsWeb2 from '$lib/assets/skate02.gif';
 
 
 
@@ -25,6 +25,12 @@
         var ProvMessage = scriptureData.scripture[3].ProvMessage;
 
 
+
+        let isOn = false;
+
+        function toggle() {
+        isOn = !isOn;
+        }
 
 
 
@@ -103,21 +109,50 @@ style="background-image: url({AllenSkyWolf});">
      </form>
  </div>
 
+ <article><h3>article</h3>
+    {#if isOn}
+    Team USA defeats 'punch in the mouth' we needed - Durant
+   
+    {/if}   
+</article>
+
+
+
+<div id="divButton">
+    <input type="button" id="buttonArticle" value={isOn ? 'hide' : 'show'} on:click={toggle} class={isOn ? 'on' : 'off'} />
+    
+</div>
+    
+
+</div>
+
+<div class="blackdiv">
+
+
+    
+<div class="pictureContainer">
+    <div 
+    class="footer01"
+    style="background-image: url({RonsWeb2});"
+    >
+    </div>
+</div>
+
+<div class="leftySkateBoard">Photo by Budgeron Bach from Pexels</div>
+<div class="lastblock">
+
+</div>
+<div class="lastblock2">
+    By Ronald Kiefer on April 4, 2025
+</div>
 
 
 
 </div>
 
 
-</div>
 
-<br><br><br><br><br><br><br><br>
-
-
-
-
-
-
+ </div>
 
 
 <style>
@@ -253,6 +288,7 @@ style="background-image: url({AllenSkyWolf});">
 .bodyTwo {
     background-color: lightblue;
     padding-top: 30px;
+    padding-bottom: 100px;
 }
 
 form {
@@ -267,6 +303,121 @@ form {
 
 .h2tag {
     padding-left: 20px;
+}
+
+#buttonArticle {
+
+background-color: rgb(146, 138, 199);
+
+border-radius: 10px;
+position: relative;
+float: right;
+top: -10px;
+right: 100px;
+
+}
+
+
+article {
+background-color:rgb(146, 138, 199);
+color: white;
+font-size: 20px;
+/*padding: 50px 20px;
+padding-top: 10px;*/
+
+height: 190px;
+padding:20px;
+width: 85%;
+margin: auto;
+margin-top: 0px;
+margin-bottom: 30px;
+
+
+}
+
+
+
+
+
+article h3{
+
+/*margin-left: 20px;*/
+padding-top: 0px;
+color: black;
+font-size: 16px;
+padding-bottom: 20px;
+}
+
+
+
+
+
+.footer01 {
+        background-color: #0000CC;
+        height: 100%;
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        width: 100%;
+        float: right;
+    }
+
+    .pictureContainer {
+        height: 200px; /* Full viewport height */
+        width: 25%; /* Full width */
+        background-color: #f9cdc4;
+        float: right;
+        padding: 20px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+
+    }
+
+
+.blackdiv {
+    background-color: #000000;
+    padding: 5%;
+    height: 350px;
+}
+
+
+
+.leftySkateBoard {
+    font-size: 24px;
+    color: lightgray;
+    background-color: #0000CC;
+    width: 50%;
+    height: 100px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: -17px;
+    padding-right: 20px;
+}
+
+.lastblock {
+    background-color: #6da6f1;
+    height: 50px;
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: -17px;
+    padding-right: 20px;
+}
+
+.lastblock2 {
+    background-color: #476C9B;
+    height: 25px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 130px;
+    padding-right: 20px;
+    color: white;
+    font-size: 22px;
+
 }
 
 
