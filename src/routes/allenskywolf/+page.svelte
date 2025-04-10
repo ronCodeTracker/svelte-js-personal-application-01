@@ -17,12 +17,12 @@
      let selectedScripture = ''; // Variable to hold the selected value
 
 
-     import scriptureData from '$lib/data/scripture.json';
+     import scriptureData from '$lib/data/allenskywolf.json';
 
-        var RevMessage = scriptureData.scripture[0].RevMessage;
-        var ZachMessage = scriptureData.scripture[1].ZachMessage;
-        var JerMessage = scriptureData.scripture[2].JerMessage;
-        var ProvMessage = scriptureData.scripture[3].ProvMessage;
+        var RevMessage = scriptureData.messagedata[0].message01;
+        var ZachMessage = scriptureData.messagedata[1].message02;
+        var JerMessage = scriptureData.messagedata[2].message03;
+        var ProvMessage = scriptureData.messagedata[3].message04;
 
 
 
@@ -71,17 +71,17 @@ style="background-image: url({AllenSkyWolf});">
 <div class="bodyTwo">
 
     <aside>
-        {#if selectedScripture === 'Rev'}
-        <p class="message01">Revelation 3:11</p>
+        {#if selectedScripture === 'Phone'}
+        <p class="message01"></p>
         <p class="message01">{RevMessage}</p>
-    {:else if selectedScripture === 'Zack'}
-        <p class="message01">Zachariah 4:6</p>
+    {:else if selectedScripture === 'Web'}
+        <p class="message01"></p>
         <p class="message01">{ZachMessage}</p>
-    {:else if selectedScripture === 'Jer'}
-        <p class="message01">Jeremiah 18:14</p>
+    {:else if selectedScripture === 'How'}
+        <p class="message01"></p>
         <p class="message01">{JerMessage}</p>
-    {:else if selectedScripture === 'Prov'}
-        <p class="message01">Proverbs 3:3</p>
+    {:else if selectedScripture === 'Cont'}
+        <p class="message01"></p>
         <p class="message01">{ProvMessage}</p>
     {:else}
         <p class="message01">No selection made.</p>
@@ -91,18 +91,18 @@ style="background-image: url({AllenSkyWolf});">
 
 
       <div class="bodyTwo">
-        <h2 class="h2tag">Scripture Selection</h2>
+        <h2 class="h2tag">Selection</h2>
      <form>
          <fieldset>
-             <legend>Which scripture do you want shown?</legend>
-             <input type="radio" name="script" id="r" value="Rev" bind:group={selectedScripture}/>
-             <label for="r" class="fset001">Revelation 3:11</label>
-             <input type="radio" name="script" id="z" value="Zack" bind:group={selectedScripture}/>
-             <label for="z" class="fset001">Zachariah 4:6</label>
-             <input type="radio" name="script" id="j" value="Jer" bind:group={selectedScripture}/>
-             <label for="j" class="fset001">Jeremiah 18:14</label>
-             <input type="radio" name="script" id="p" value="Prov" bind:group={selectedScripture}/>
-             <label for="p" class="fset001">Proverbs 3:3</label>
+             <legend>Which do you want shown?</legend>
+             <input type="radio" name="script" id="r" value="Phone" bind:group={selectedScripture}/>
+             <label for="r" class="fset001">Phone Number</label>
+             <input type="radio" name="script" id="z" value="Web" bind:group={selectedScripture}/>
+             <label for="z" class="fset001">Web App</label>
+             <input type="radio" name="script" id="j" value="How" bind:group={selectedScripture}/>
+             <label for="j" class="fset001">How</label>
+             <input type="radio" name="script" id="p" value="Cont" bind:group={selectedScripture}/>
+             <label for="p" class="fset001">Continue</label>
  
  
          </fieldset>
@@ -110,10 +110,19 @@ style="background-image: url({AllenSkyWolf});">
  </div>
 
  <article><h3>article</h3>
-    {#if isOn}
-    Team USA defeats 'punch in the mouth' we needed - Durant
-   
-    {/if}   
+    <div class="largeFont01">
+        {#if isOn}
+          Call Me!
+        {/if}
+        <br>
+    </div>
+    <div class="largeFont02">
+        <br>
+        {#if isOn}
+        Get started on your custom app today, so you will have it tomorrow. 
+        {/if}
+        <br>
+    
 </article>
 
 
@@ -143,7 +152,7 @@ style="background-image: url({AllenSkyWolf});">
 
 </div>
 <div class="lastblock2">
-    By Ronald Kiefer on April 4, 2025
+    Updated by Ronald Kiefer on April 10, 2025
 </div>
 
 
@@ -420,8 +429,15 @@ padding-bottom: 20px;
 
 }
 
+.largeFont01 {
+    font-size: 28px;
+    margin-left: 10px;
+}
 
-
+.largeFont02 {
+    margin-left: 10px;
+    font-size: 24px;
+}
 
 </style>
 
