@@ -91,7 +91,7 @@ style="background-image: url({AllenSkyWolf});">
 
 
       <div class="bodyTwo">
-        <h2 class="h2tag">Selection</h2>
+        <h2 class="h2tag underline">Selection</h2>
      <form>
          <fieldset>
              <legend>Which do you want shown?</legend>
@@ -165,6 +165,9 @@ style="background-image: url({AllenSkyWolf});">
 
 
 <style>
+
+@import "tailwindcss";
+
 
 .heading {    
         height: 250px; /* Adjust as needed */
