@@ -1,5 +1,16 @@
 
 <script>
+   /*
+
+       Name: Ronald Kiefer
+       Date: 2025-04-17 Thursday
+       Description:  Business and Personal Web Application
+
+   */
+
+
+
+
 
     import AllenSkyWolf from '$lib/assets/AllenSkyWolfHeader001.png';
     import RonsWeb2 from '$lib/assets/skate02.gif';
