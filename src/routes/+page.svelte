@@ -15,7 +15,7 @@
     //console.log('people', people);
 
 
-    let isMenuOpen = false;
+    let isMenuOpen = true;
 
     function toggleMenu() {
         isMenuOpen = !isMenuOpen;
@@ -78,7 +78,7 @@ let isOn = false;
 
 <nav>
     <div class="menu-container">
-        <button class="hamburger" on:click={toggleMenu}>click</button>
+        <!--<button class="hamburger" on:click={toggleMenu}>click</button>  -->
         <!-- <a href="/" class="logo">home</a> -->
         <button class="hamburger" on:click={toggleMenu} aria-label="Toggle menu">
             <span></span>
