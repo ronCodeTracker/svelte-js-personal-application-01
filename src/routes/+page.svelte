@@ -81,7 +81,7 @@ let isOn = false;
     <div class="menu-container">
         <a href="/" class="logo">home</a>
         <button class="hamburger" on:click={toggleMenu} aria-label="Toggle menu">
-            <span></span>
+            <span>click</span>
             <span></span>
             <span></span>
         </button>
