@@ -86,8 +86,7 @@ let isOn = false;
             <span></span>
         </button>
     </div>
-    
-    <ul class:open={false}>
+    <ul class:open={isMenuOpen}>
         <li><a href="/">Home</a></li>
         <li><a href="/">outofservice</a></li>
         <li><a href="/allenskywolf">AllenSkyWolf</a></li>
