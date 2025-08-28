@@ -79,7 +79,6 @@ let isOn = false;
 
 <nav>
     <div class="menu-container">
-        
         <a href="/" class="logo">home</a>
         <button class="hamburger" on:click={toggleMenu} aria-label="Toggle menu">
             <span></span>
@@ -87,15 +86,14 @@ let isOn = false;
             <span></span>
         </button>
     </div>
-    {#if isMenuOpen}
-    <ul>
+    
+    <ul class:open={false}>
         <li><a href="/">Home</a></li>
         <li><a href="/">outofservice</a></li>
         <li><a href="/allenskywolf">AllenSkyWolf</a></li>
         <li><a href="/">outofservice</a></li>
         <li><a href="/">outofservice</a></li>
     </ul>
-    {/if}
 </nav>
 
 
