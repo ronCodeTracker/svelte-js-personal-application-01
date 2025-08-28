@@ -77,16 +77,16 @@ let isOn = false;
 
 
 
-<nav>
+<nav>nav
     <div class="menu-container">
         <a href="/" class="logo">home</a>
         <button class="hamburger" on:click={toggleMenu} aria-label="Toggle menu">
-            <span>click</span>
+            click<span>click</span>
             <span></span>
             <span></span>
         </button>
     </div>
-    <ul class:open={isMenuOpen}>
+    <ul class:open={isMenuOpen}>ul
         <li><a href="/">Home</a></li>
         <li><a href="/">outofservice</a></li>
         <li><a href="/allenskywolf">AllenSkyWolf</a></li>
