@@ -197,18 +197,21 @@ style="background-image: url({RonsWeb2});"
 </div>
 </div>
 <style>
-
+/*
 nav {
         background-color: #476C9B;
         padding: 10px 20px;
     }
+*/
 
+/*
     .menu-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
+*/
+/*
     .logo {
         color: #fff;
         text-decoration: none;
@@ -262,7 +265,7 @@ nav {
     ul li a:hover {
         background-color: #0000CC;
     }
-
+*/
     .heading {    
         height: 170px; /* Adjust as needed */
         width: 100%; /* Full width */
