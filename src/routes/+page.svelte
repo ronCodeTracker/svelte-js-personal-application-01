@@ -262,6 +262,10 @@ style="background-image: url({RonsWeb2});"
     By Ronald Kiefer on April 4, 2025
 </div>
 </div>
+<!--i try to be respectable ha ha-->
+
+
+
 <style>
 /*
 nav {
