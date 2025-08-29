@@ -65,8 +65,22 @@ let isOn = false;
 
 
 
-</script>
+	import Hamburger from './Hamburger.svelte';
+	//import ToggleButton from './ToggleButton.svelte';
 
+	// defaults
+	let isOpen = false;
+	let unit = 'rem';
+	let width = 6;
+	let height = 4;
+	let lineHeight = 0.8;
+	let lineBorderRadius = 0.4;
+	let contain = true;
+
+	function hamburgerClick() {
+		isOpen = !isOpen;
+	}
+</script>
 
 <div class="bodyCentral">
 
@@ -75,12 +89,28 @@ let isOn = false;
  style="background-image: url({RonsWeb});"
   ></div>
 
+  <!-- Navigation    -->
 
+<Hamburger
+					{isOpen}
+					{hamburgerClick}
+					{width}
+					{height}
+					{lineHeight}
+					{unit}
+					{contain}
+					{lineBorderRadius}
+				/>
+
+
+
+
+<!--
 <nav>
     <div class="menu-container">
-        <button on:click={toggleMenu}>click</button>
+        <button on:click={toggleMenu}>click</button>-->
         <!-- <a href="/" class="logo">home</a> -->
-        <button class="hamburger" on:click={toggleMenu} aria-label="Toggle menu">
+        <!--<button class="hamburger" on:click={toggleMenu} aria-label="Toggle menu">
             <span></span>
             <span></span>
             <span></span>
@@ -95,7 +125,7 @@ let isOn = false;
         <li><a href="/">outofservice</a></li>
     </ul>
     {/if}
-</nav>
+</nav>    -->
 
 
 
