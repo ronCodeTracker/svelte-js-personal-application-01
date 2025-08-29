@@ -63,8 +63,7 @@ let isOn = false;
   
 
 
-    import { Hamburger } from 'svelte-hamburgers';
-
+    
 
 
 
@@ -79,7 +78,6 @@ let isOn = false;
   ></div>
 
 
-<Hamburger type="squeeze" />
 
 
 
