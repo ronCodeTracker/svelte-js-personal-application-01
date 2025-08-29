@@ -1,6 +1,6 @@
 
 
-<script lang="ts">
+<script>
 	export let isOpen;
 	export let hamburgerClick;
 	export let unit = 'rem';
@@ -11,7 +11,7 @@
 	export let lineBorderRadius = 0.4;
 
 	// vertical line offset when isOpen === true
-	$: offset = height / 2 - lineHeight / 2;
+     let offset = height / 2 - lineHeight / 2;
 </script>
 
 
