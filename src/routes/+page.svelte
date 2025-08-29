@@ -63,23 +63,12 @@ let isOn = false;
   
 
 
+    import { Hamburger } from 'svelte-hamburgers';
 
 
-	import Hamburger from './Hamburger.svelte';
-	//import ToggleButton from './ToggleButton.svelte';
 
-	// defaults
-	let isOpen = false;
-	let unit = 'rem';
-	let width = 6;
-	let height = 4;
-	let lineHeight = 0.8;
-	let lineBorderRadius = 0.4;
-	let contain = true;
 
-	function hamburgerClick() {
-		isOpen = !isOpen;
-	}
+
 </script>
 
 <div class="bodyCentral">
@@ -89,19 +78,8 @@ let isOn = false;
  style="background-image: url({RonsWeb});"
   ></div>
 
-  <!-- Navigation    -->
 
-<Hamburger
-					{isOpen}
-					{hamburgerClick}
-					{width}
-					{height}
-					{lineHeight}
-					{unit}
-					{contain}
-					{lineBorderRadius}
-				/>
-
+<Hamburger type="squeeze" />
 
 
 
